@@ -7,23 +7,32 @@
       "autoplay": 9000,
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z"
-        },
-        {
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
-          "start": "",
-          "end": ""
+          "img": "/img/uploads/slider-1.jpg",
+          "link": "/",
+          "alt": "Flor de Cristal Oficial"
         }
       ]
     },
     {
       "type": "info-bar",
-      "enabled": true
+      "enabled": false
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-grande.jpg",
+          "link": ""
+        },
+        {
+          "img": "/img/uploads/banner-direito-peq.jpg",
+          "link": ""
+        },
+        {
+          "img": "/img/uploads/banner-direito-peq.jpg",
+          "link": ""
+        }
+      ]
     },
     {
       "type": "collection-shelf",

@@ -163,15 +163,22 @@ if (header.categories_list) {
             <i class="fas fa-search"></i>
           </button>
 
+          <a style="font-size: 1rem; color: #000" class="d-none d-md-inline btn btn-lg" href="/app/#/account/orders">Meus pedidos</a>
+          <span style="color: #000" class="d-none d-md-inline">|</span>
+
           <a
             id="user-button"
             class="btn btn-lg"
             role="button"
             href="/app/#/account/"
+            style="font-size: 1rem"
             title="<%= _.dictionary('myAccount') %>"
           >
-            <i class="fas fa-user"></i>
-          </a>
+          <span class="d-none d-md-inline" style="color: #000">Minha conta</span>
+        <span class="d-md-none"><i class="fas fa-user"></i></span>
+
+        </a>
+        
           <a
             id="cart-button"
             class="btn btn-lg"

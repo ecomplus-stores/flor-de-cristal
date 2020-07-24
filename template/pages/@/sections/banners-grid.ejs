@@ -3,10 +3,20 @@
   <div class="banners-grid my-3 my-md-4 my-lg-5">
     <div class="container">
       <div class="row">
-        <% for (let i = 0; i < opt.banners.length; i++) { %>
-          <div class="col-12 col-lg-<%= colSize %> mb-3 mb-lg-0">
-            <%- await include('@/sections/inc/banner', { _, opt: opt.banners[i] }) %>
+        <% if (opt.banners.length === 3) { %>
+          <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+            <%- await include('@/sections/inc/banner', { _, opt: opt.banners[0] }) %>
           </div>
+          <div class="col-12 col-lg-6 mb-3 mb-lg-0" id="banner-secundario">
+            <%- await include('@/sections/inc/banner', { _, opt: opt.banners[1] }) %>
+            <%- await include('@/sections/inc/banner', { _, opt: opt.banners[2] }) %>
+          </div>
+        <% } else { %>
+          <% for (let i = 0; i < opt.banners.length; i++) { %>
+            <div class="col-12 col-lg-<%= colSize %> mb-3 mb-lg-0">
+              <%- await include('@/sections/inc/banner', { _, opt: opt.banners[i] }) %>
+            </div>
+          <% } %>
         <% } %>
       </div>
     </div>

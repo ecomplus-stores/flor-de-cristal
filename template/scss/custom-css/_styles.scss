@@ -1,1 +1,160 @@
 // Add your custom CSS here.
+.top-bar .top-bar__nav.d-none.d-md-block, .fas.fa-search {
+  display: none !important;
+}
+// Add your custom CSS here.
+@media  screen and (min-width: 1368px) {
+  .product-card--small .product-card__picture img, .product-card--small .product-card__pictures {
+    max-height: 300px;
+    height: 300px;
+  }
+  .pswp__zoom-wrap img {
+    height: 1000px !important;
+    width: auto !important;
+  }
+  #banner-secundario .banner:first-child {
+    padding-bottom: .55rem
+  }
+}
+
+//desktop normal size
+@media  screen and (min-width: 992px) and (max-width: 1367px) {
+  //slider full
+  .banner-slider {
+    max-width: 100%;
+  }
+  .product-card--small .product-card__picture img, .product-card--small .product-card__pictures {
+    max-height: 300px;
+    height: 300px;
+  }
+  .pswp__zoom-wrap img {
+    height: 1000px !important;
+    width: auto !important;
+  }
+  #banner-secundario .banner:first-child {
+    padding-bottom: .55rem
+  }
+}
+// apenas tablet
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .pswp__zoom-wrap img {
+    height: 1000px !important;
+    width: auto !important;
+  }
+  .pswp__zoom-wrap {
+    transform: translate3d(6%, 1%, 0) scale(1) !important;
+  }
+  #banner-secundario .banner:first-child {
+    padding-bottom: .55rem
+  }
+}
+// apenas mobile
+@media screen and (max-width: 480px) {
+  .pswp__zoom-wrap img {
+    height: 400px !important;
+    width: auto !important;
+  }
+  .pswp__zoom-wrap {
+    transform: translate3d(18%, 20%, 0) scale(1) !important;
+  }
+}
+.product-card__picture {
+  border-radius: 0px;
+}
+.top-bar__countdown {
+  background: #eee8d9;
+  color: #2f2f2f;
+}
+#search-form {
+  border: 2px solid #f6bcbf;
+}
+.header__search-btn svg {
+  font-size: 0px
+}
+.header__search-btn::after {
+  font-size: 1.2rem;
+  content: 'OK';
+  font-weight: bold;
+  color: #000;
+}
+.products-carousel__title {
+  color: #fdbcbe;
+  text-transform: uppercase;
+}
+.product-card__name, .prices.product-card__prices {
+  text-align: center;
+  color: #424242;
+}
+.product-card .prices__discount {
+  display: none;
+}
+.product-card__prices .prices__compare {
+  text-decoration: none !important;
+}
+.product-card__prices .prices__value {
+  color: #424242;
+}
+.product-card__prices .prices__installments::before {
+  content: 'ou ';
+  font-weight: 400;
+}
+.product-card__prices .prices__installments span::before {
+  content: 'de ';
+  font-weight: 400;
+}
+.product-card__prices .prices__installments {
+  font-weight: 700 !important;
+}
+.top-bar, #header {
+  background: #fff;
+}
+#header {
+  border: none;
+}
+.product__prices .prices__compare small {
+  text-transform: none !important;
+  padding-right: .2rem;
+}
+.product__prices .prices__compare small:last-child {
+  display: none;
+}
+.product__prices .prices__value::before {
+  content: 'Por ';
+  font-weight: 400 !important;
+  color: #000 !important;
+  font-size: var(--font-size) !important;
+}
+.top-bar .whatsapp-link {
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top-bar .whatsapp-link svg {
+  color: #00c500;
+  font-size: 2rem;
+  padding-right: .4rem;
+}
+.header__nav a:last-child {
+  background: #ffb9be;
+  color: #fff;
+  border-radius: 0;
+}
+.header__nav a {
+  color: #ffb9be;
+  padding: 7px;
+  font-weight: 700;
+}
+.header__nav a:hover {
+  background: #ffb9be;
+  color: #fff;
+  border-radius: 0;
+}
+#user-button svg, #mobile-search-btn svg, #cart-button svg, .header__toggler svg {
+    color: #ffb9be;
+}
+#cart-count {
+  background: #e8ccc8;
+}
+.footer {
+  background: #fff
+}
