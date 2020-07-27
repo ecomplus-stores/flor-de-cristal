@@ -1,5 +1,5 @@
 // Add your custom CSS here.
-.top-bar .top-bar__nav.d-none.d-md-block, .fas.fa-search {
+.top-bar .top-bar__nav.d-none.d-md-block {
   display: none !important;
 }
 // Add your custom CSS here.
@@ -12,8 +12,28 @@
     height: 1000px !important;
     width: auto !important;
   }
+  .fas.fa-search {
+    display: none !important;
+  }
   #banner-secundario .banner:first-child {
     padding-bottom: .55rem
+  }
+  #nameIf {
+    padding: var(--spacer-2);
+    margin-left: var(--spacer-1);
+    color: var(--secondary);
+    position: relative;
+    top: var(--spacer-3)
+  }
+  #cart-button img {
+    position: relative;
+    bottom: 1rem;
+  }
+  #cart-count {
+    background: transparent !important;
+    top: .55rem;
+    right: 1.2rem;
+    color: #fdc23c;
   }
 }
 
@@ -31,8 +51,28 @@
     height: 1000px !important;
     width: auto !important;
   }
+  .fas.fa-search {
+    display: none !important;
+  }
+  #cart-button img {
+    position: relative;
+    bottom: 1rem;
+  }
+  #cart-count {
+    background: transparent !important;
+    top: .55rem;
+    right: 1.2rem;
+    color: #fdc23c;
+  }
   #banner-secundario .banner:first-child {
     padding-bottom: .55rem
+  }
+  #nameIf {
+    padding: var(--spacer-2);
+    margin-left: var(--spacer-1);
+    color: var(--secondary);
+    position: relative;
+    top: var(--spacer-3)
   }
 }
 // apenas tablet
@@ -46,6 +86,23 @@
   }
   #banner-secundario .banner:first-child {
     padding-bottom: .55rem
+  }
+  #nameIf {
+    padding: var(--spacer-2);
+    margin-left: var(--spacer-5);
+    color: var(--secondary);
+    position: relative;
+    top: var(--spacer-3)
+  }
+  #cart-button img {
+    position: relative;
+    bottom: 1rem;
+  }
+  #cart-count {
+    background: transparent !important;
+    top: .55rem;
+    right: 1.2rem;
+    color: #fdc23c;
   }
 }
 // apenas mobile
@@ -155,6 +212,18 @@
 #cart-count {
   background: #e8ccc8;
 }
+.header__toggler {
+  display: none;
+}
 .footer {
-  background: #fff
+  & .header__logo {
+    max-height: 80px
+  }
+  & a, & p, & span {
+    color: #3d3a3a;
+  }
+  background: #eee8d9;
+}
+.footer__title[aria-expanded="true"]::after {
+    content: none;
 }
