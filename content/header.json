@@ -1,11 +1,12 @@
 {
   "marketing_stripe": {
     "text": "10 ANOS DE GARANTIA | 10X SEM JUROS | FRETE GRÁTIS ACIMA DE R$ 299,90",
-    "link": ""
+    "link": "",
+    "background": "#43ff00",
+    "color": "#ff00bd"
   },
   "contacts_stripe": {
-    "pages": [
-    ],
+    "pages": [],
     "phone_wpp": false,
     "socials": false
   },
