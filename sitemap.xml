@@ -26,13 +26,13 @@
     </url>
   
     <url>
-      <loc>https://flor-de-cristal.netlify.app/pages/pagamentos</loc>
+      <loc>https://flor-de-cristal.netlify.app/pages/manutencao</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://flor-de-cristal.netlify.app/pages/manutencao</loc>
+      <loc>https://flor-de-cristal.netlify.app/pages/pagamentos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
